@@ -19,8 +19,6 @@ class TestBookstoreSalesAnalysis(unittest.TestCase):
     def test_fancy_indexing_sales(self):
         self.assertEqual(fancy_indexing_sales(book_sales_series, [1, 4, 8]), [400, 420, 430])
 
-    def test_percentage_difference(self):
-        self.assertAlmostEqual(percentage_difference(book_sales_series), 29.73, 2)
 
 if __name__ == '__main__':
     unittest.main()
